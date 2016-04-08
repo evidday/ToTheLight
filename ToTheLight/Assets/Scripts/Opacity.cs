@@ -50,6 +50,6 @@ public class Opacity : MonoBehaviour {
             opacity = 1f;
         }
         dark.color = new Color(dark.color.r, dark.color.g, dark.color.b, (float)(lightTransparence * opacity * backModifier * backLightModifier) + backPlus);
-        colored.color = new Color(colored.color.r, colored.color.g, colored.color.b, opacity);
+        colored.color = new Color(colored.color.r, colored.color.g, colored.color.b, opacity - (opacity)*(lightTransparence)*backModifier);
     }
 }

@@ -81,11 +81,13 @@
     <Compile Include="Assets\BattleScene\Map\SpawnPlayer.cs" />
     <Compile Include="Assets\BattleScene\SceneGenerator.cs" />
     <Compile Include="Assets\MainScene\Scripts\MainMenuScript.cs" />
+    <Compile Include="Assets\PlayerCharacter\ActiveTrigger.cs" />
     <Compile Include="Assets\PlayerCharacter\CharacterControl.cs" />
     <Compile Include="Assets\PlayerCharacter\Light\LightCounter.cs" />
     <Compile Include="Assets\PlayerCharacter\PlayerControl.cs" />
     <Compile Include="Assets\PlayerCharacter\PlayerLayerScript.cs" />
     <Compile Include="Assets\PlayerCharacter\СameraSizeScript.cs" />
+    <Compile Include="Assets\Scripts\Cover.cs" />
     <Compile Include="Assets\Scripts\LightComponent.cs" />
     <Compile Include="Assets\Scripts\Opacity.cs" />
     <Compile Include="Assets\TimeTrash\2DLightAsset\Examples\RigidBodyInterpolationSolution\FollowLight2d.cs" />
