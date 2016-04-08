@@ -80,6 +80,8 @@
     <Compile Include="Assets\BattleScene\Map\EndLocationScript.cs" />
     <Compile Include="Assets\BattleScene\Map\Forest\MidBlock\MidFlip.cs" />
     <Compile Include="Assets\BattleScene\Map\MidBlockFlip.cs" />
+    <Compile Include="Assets\BattleScene\Map\ParallaxBackground\LightComponentBackground.cs" />
+    <Compile Include="Assets\BattleScene\Map\ParallaxBackground\ParallaxSpawner.cs" />
     <Compile Include="Assets\BattleScene\Map\SpawnPlayer.cs" />
     <Compile Include="Assets\BattleScene\SceneGenerator.cs" />
     <Compile Include="Assets\MainScene\Scripts\MainMenuScript.cs" />
