@@ -13,12 +13,16 @@ public class SceneGenerator : MonoBehaviour {
     public GameObject[] forestMidBlocks;
     public GameObject[] forestEndBlocks;
 
+    private GameObject rotate;
+
     private void MapCreator(GameObject[] begin, GameObject[] mid, GameObject[] end)
     {
         GameObject.Instantiate(begin[Random.Range(0, begin.Length - 1)], startPoint.transform.position, startPoint.transform.rotation);
-        GameObject.Instantiate(mid[Random.Range(0, mid.Length - 1)], midPoint1.transform.position, midPoint1.transform.rotation);
+        rotate = (GameObject)GameObject.Instantiate(mid[Random.Range(0, mid.Length - 1)], midPoint1.transform.position, midPoint1.transform.rotation);
+        rotate.GetComponent<MidFlip>().Flip();
         GameObject.Instantiate(mid[Random.Range(0, mid.Length - 1)], midPoint2.transform.position, midPoint2.transform.rotation);
-        GameObject.Instantiate(mid[Random.Range(0, mid.Length - 1)], midPoint3.transform.position, midPoint3.transform.rotation);
+        rotate = (GameObject)GameObject.Instantiate(mid[Random.Range(0, mid.Length - 1)], midPoint3.transform.position, midPoint3.transform.rotation);
+        rotate.GetComponent<MidFlip>().Flip();
         GameObject.Instantiate(end[Random.Range(0, end.Length - 1)], endPoint.transform.position, endPoint.transform.rotation);
     }
 
