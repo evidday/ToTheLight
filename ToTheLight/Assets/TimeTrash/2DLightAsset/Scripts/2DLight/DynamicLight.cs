@@ -81,9 +81,12 @@ public class DynamicLight : MonoBehaviour {
 
 		Collider2D [] allColl2D = Physics2D.OverlapCircleAll(transform.position, lightRadius, layer);
 		allMeshes = new PolygonCollider2D[allColl2D.Length];
-
+        Debug.Log(allColl2D.Length);
 		for (int i=0; i<allColl2D.Length; i++) {
-			allMeshes[i] = (PolygonCollider2D)allColl2D[i];
+            if (allColl2D[i].gameObject.layer == 19) //Shadow
+            {
+                allMeshes[i] = (PolygonCollider2D)allColl2D[i];
+            }
 		}
 
 

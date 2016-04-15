@@ -11,6 +11,8 @@ public class Opacity : MonoBehaviour {
     private float backModifier;
     private float backPlus;
     private float backLightModifier;
+    public Light lightSourceColored = null;
+    public Light lightSourceDark = null;
 
     public void SetLightTransparence(float tr)
     {
@@ -43,7 +45,7 @@ public class Opacity : MonoBehaviour {
         }
         if (transparence)
         {
-            opacity = 0.5f;
+            opacity = 0.4f;
         }
         else
         {
@@ -51,5 +53,10 @@ public class Opacity : MonoBehaviour {
         }
         dark.color = new Color(dark.color.r, dark.color.g, dark.color.b, (float)(lightTransparence * opacity * backModifier * backLightModifier) + backPlus);
         colored.color = new Color(colored.color.r, colored.color.g, colored.color.b, opacity - (opacity)*(lightTransparence)*backModifier);
+        if (lightSourceColored != null)
+        {
+            lightSourceColored.intensity = 4 * (opacity - (opacity) * (lightTransparence) * backModifier);
+           // lightSourceDark.color = new Color(lightSourceDark.color.r, lightSourceDark.color.g, lightSourceDark.color.b, (float)(lightTransparence * opacity * backModifier * backLightModifier) + backPlus);
+        }
     }
 }

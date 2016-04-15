@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MidBlockFlip : MonoBehaviour {
 
-    public SpriteRenderer collored;
+    public SpriteRenderer colored;
     public SpriteRenderer dark;
 
 	// Use this for initialization
@@ -11,8 +11,14 @@ public class MidBlockFlip : MonoBehaviour {
 	
 	}
 
+    public void SetOpacity(float tr)
+    {
+        dark.color = new Color(dark.color.r, dark.color.g, dark.color.b, (float)(tr));
+        //colored.color = new Color(colored.color.r, colored.color.g, colored.color.b, opacity - (opacity) * (lightTransparence) * backModifier);
+    }
+
     public void SetFlip() {
-        collored.flipX = true;
+        colored.flipX = true;
         dark.flipX = true;
     }
 	

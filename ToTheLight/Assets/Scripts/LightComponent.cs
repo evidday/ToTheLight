@@ -13,6 +13,8 @@ public class LightComponent : MonoBehaviour {
     private Color newColor;
     public Color cl;
 
+  //  public Light lightSource = null;
+
 
     public void NewLight(string name, float value)
     {

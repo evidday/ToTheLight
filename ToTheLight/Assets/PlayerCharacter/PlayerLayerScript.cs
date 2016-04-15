@@ -5,14 +5,13 @@ public class PlayerLayerScript : MonoBehaviour {
 
     private bool layer;
     public SpriteRenderer playerRender;
-    public GameObject CoverObject;
+    public GameObject coverObject;
     private float timer;
     private bool layerTrigger;
 	// Use this for initialization
 	void Start () {
         layer = false;
         timer = Time.time;
-        layerTrigger = true;
 	}
 
     void OnTriggerStay2D(Collider2D other)
@@ -27,11 +26,6 @@ public class PlayerLayerScript : MonoBehaviour {
         }
     }
 
-    public void SetLayerTrigger(bool tr)
-    {
-        layerTrigger = tr;
-    }
-
     void OnTriggerExit2D(Collider2D other)
     {
         other.GetComponent<Opacity>().SetTransparence(false);
@@ -39,7 +33,7 @@ public class PlayerLayerScript : MonoBehaviour {
     }
     // Update is called once per frame
     void FixedUpdate () {
-        if (Input.GetKey(KeyCode.LeftShift) && (timer + 0.3 <= Time.time) && layerTrigger)
+        if (Input.GetKey(KeyCode.LeftShift) && (timer + 0.3 <= Time.time) && coverObject.GetComponent<ActiveTrigger>().GetBlock())
         {
             layer = !layer;
             timer = Time.time;
@@ -53,6 +47,6 @@ public class PlayerLayerScript : MonoBehaviour {
                 playerRender.sortingLayerName = "Second";
             }
         }
-        CoverObject.GetComponent<ActiveTrigger>().SetLayer(layer);
+        coverObject.GetComponent<ActiveTrigger>().SetLayer(layer);
     }
 }

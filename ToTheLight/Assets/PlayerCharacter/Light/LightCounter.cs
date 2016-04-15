@@ -7,6 +7,7 @@ public class LightCounter : MonoBehaviour {
     private int lightCounter;
     private float maxLength = (float)20;
     private int maxLight = 1000;
+    private GameObject sceneStarter;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,10 +29,15 @@ public class LightCounter : MonoBehaviour {
 
     void Start () {
         lightCounter = 1000;
-	}
+        foreach (GameObject start in GameObject.FindGameObjectsWithTag("SceneStarter"))
+        {
+            sceneStarter = start;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        sceneStarter.GetComponent<SceneGenerator>().SetLight(1 - lightCounter / maxLight);
         this.GetComponent<CircleCollider2D>().radius = 20 * lightCounter / maxLight;// new Vector3(lightCounter / maxLight, lightCounter / maxLight, lightCounter / maxLight);
 	}
 }

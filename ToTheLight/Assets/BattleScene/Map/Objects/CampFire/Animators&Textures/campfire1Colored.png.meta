@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: c190e552f57c77d45aaa908f9a055317
+timeCreated: 1460723133
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: campfire1_0
+    21300002: campfire1_1
+    21300004: campfire1_2
+    21300006: campfire1_3
+    21300008: campfire1_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: campfire1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 25}
+        - {x: -13, y: 10}
+        - {x: -16, y: 5}
+        - {x: -16, y: -32}
+        - {x: 15, y: -32}
+        - {x: 16, y: -30}
+        - {x: 16, y: 25}
+      - - {x: -7, y: 27}
+        - {x: -6, y: 25}
+        - {x: -3, y: 25}
+        - {x: 1, y: 27}
+        - {x: 2, y: 32}
+        - {x: -7, y: 32}
+    - name: campfire1_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 21}
+        - {x: -16, y: 12}
+        - {x: -16, y: -29}
+        - {x: -15, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 12}
+        - {x: 3, y: 21}
+      - - {x: 11, y: 28}
+        - {x: 8, y: 23}
+        - {x: 8, y: 21}
+        - {x: 8, y: 26}
+        - {x: 6, y: 30}
+        - {x: 4, y: 32}
+        - {x: -3, y: 32}
+        - {x: -3, y: 16}
+        - {x: 2, y: 7}
+        - {x: 5, y: 7}
+        - {x: 11, y: 11}
+        - {x: 16, y: 23}
+        - {x: 16, y: 26}
+    - name: campfire1_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 13}
+        - {x: 9, y: 10}
+        - {x: 2, y: 15}
+        - {x: -3, y: 15}
+        - {x: -9, y: 6}
+        - {x: -11, y: 7}
+        - {x: -16, y: 5}
+        - {x: -16, y: -29}
+        - {x: -12, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 13}
+        - {x: 15, y: 15}
+      - - {x: -7, y: 32}
+        - {x: -11, y: 30}
+        - {x: -11, y: 17}
+        - {x: -10, y: 13}
+        - {x: -3, y: 13}
+        - {x: -1, y: 14}
+        - {x: 2, y: 27}
+        - {x: 2, y: 32}
+      - - {x: -1, y: 15}
+        - {x: 2, y: 16}
+        - {x: 2, y: 19}
+        - {x: -1, y: 20}
+        - {x: -3, y: 18}
+      - - {x: 5, y: 30}
+        - {x: 3, y: 24}
+        - {x: 3, y: 18}
+        - {x: 5, y: 16}
+        - {x: 8, y: 17}
+        - {x: 11, y: 23}
+        - {x: 11, y: 27}
+        - {x: 8, y: 31}
+    - name: campfire1_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 18}
+        - {x: -16, y: 18}
+        - {x: -16, y: -32}
+        - {x: 12, y: -32}
+        - {x: 16, y: -29}
+        - {x: 16, y: -14}
+        - {x: 7, y: 7}
+      - - {x: -11, y: 32}
+        - {x: -12, y: 31}
+        - {x: -12, y: 15}
+        - {x: -11, y: 7}
+        - {x: -1, y: 2}
+        - {x: 2, y: 2}
+        - {x: 4, y: 3}
+        - {x: 5, y: 8}
+        - {x: 5, y: 22}
+        - {x: -3, y: 32}
+      - - {x: 12, y: 24}
+        - {x: 9, y: 21}
+        - {x: 9, y: 6}
+        - {x: 11, y: 5}
+        - {x: 14, y: 5}
+        - {x: 16, y: 8}
+        - {x: 16, y: 19}
+        - {x: 14, y: 24}
+      - - {x: 4, y: 27}
+        - {x: 5, y: 25}
+        - {x: 8, y: 25}
+        - {x: 12, y: 27}
+        - {x: 13, y: 32}
+        - {x: 4, y: 32}
+    - name: campfire1_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 7}
+        - {x: -15, y: 3}
+        - {x: -16, y: -2}
+        - {x: -16, y: -30}
+        - {x: -12, y: -32}
+        - {x: 12, y: -32}
+        - {x: 16, y: -27}
+        - {x: 16, y: -17}
+        - {x: 9, y: 7}
+      - - {x: -13, y: 25}
+        - {x: -14, y: 23}
+        - {x: -16, y: 15}
+        - {x: -16, y: 8}
+        - {x: -15, y: 7}
+        - {x: -11, y: 7}
+        - {x: -6, y: 15}
+        - {x: -6, y: 23}
+        - {x: -10, y: 25}
+      - - {x: -4, y: 30}
+        - {x: -6, y: 25}
+        - {x: -6, y: 16}
+        - {x: -2, y: 12}
+        - {x: 4, y: 12}
+        - {x: 5, y: 14}
+        - {x: 5, y: 28}
+        - {x: 1, y: 30}
+      - - {x: 14, y: 29}
+        - {x: 10, y: 29}
+        - {x: 9, y: 26}
+        - {x: 9, y: 20}
+        - {x: 11, y: 19}
+        - {x: 13, y: 19}
+        - {x: 16, y: 23}
+        - {x: 16, y: 28}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
