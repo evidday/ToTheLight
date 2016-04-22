@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 087b5e36930ba2d47b3def1bcb82e6a5
-timeCreated: 1460711963
+timeCreated: 1460739150
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -61,119 +61,120 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 46
+        width: 54
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 3, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 2, y: 25.5}
-        - {x: -11, y: 17.5}
-        - {x: -23, y: -2.5}
-        - {x: -23, y: -27.5}
-        - {x: -22, y: -29.5}
-        - {x: 9, y: -29.5}
-        - {x: 23, y: -18.5}
-        - {x: 23, y: 11.5}
-        - {x: 18, y: 25.5}
+      - - {x: 16, y: 25.5}
+        - {x: -3, y: 25.5}
+        - {x: -15, y: 17.5}
+        - {x: -20, y: -4.5}
+        - {x: -20, y: -22.5}
+        - {x: -11, y: -26.5}
+        - {x: 13, y: -26.5}
+        - {x: 22, y: -21.5}
+        - {x: 22, y: -2.5}
     - name: Campfire2Colored_1
       rect:
         serializedVersion: 2
-        x: 62
+        x: 61
         y: 0
-        width: 50
+        width: 60
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 4, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 16, y: 29.5}
+      - - {x: -23, y: -0.5}
+        - {x: -23, y: -13.5}
+        - {x: -6, y: -29.5}
+        - {x: 7, y: -29.5}
+        - {x: 22, y: -21.5}
+        - {x: 22, y: 5.5}
+        - {x: 19, y: 24.5}
+        - {x: 9, y: 29.5}
         - {x: -6, y: 29.5}
-        - {x: -25, y: 0.5}
-        - {x: -25, y: -26.5}
-        - {x: -22, y: -29.5}
-        - {x: 10, y: -29.5}
-        - {x: 25, y: -21.5}
-        - {x: 25, y: 10.5}
-        - {x: 23, y: 24.5}
+        - {x: -17, y: 13.5}
     - name: Campfire2Colored_2
       rect:
         serializedVersion: 2
-        x: 127
+        x: 125
         y: 0
-        width: 46
+        width: 60
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -12, y: 25.5}
-        - {x: -17, y: 19.5}
-        - {x: -23, y: 4.5}
-        - {x: -23, y: -29.5}
-        - {x: 19, y: -29.5}
-        - {x: 23, y: -28.5}
-        - {x: 23, y: 22.5}
-        - {x: 8, y: 25.5}
+      - - {x: -20, y: -20.5}
+        - {x: -16, y: -28.5}
+        - {x: 10, y: -28.5}
+        - {x: 22, y: -26.5}
+        - {x: 22, y: 8.5}
+        - {x: 17, y: 20.5}
+        - {x: 12, y: 25.5}
+        - {x: -18, y: 25.5}
+        - {x: -20, y: 24.5}
     - name: Campfire2Colored_3
       rect:
         serializedVersion: 2
-        x: 190
+        x: 189
         y: 0
-        width: 48
+        width: 60
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -1, y: 29.5}
-        - {x: -12, y: 23.5}
-        - {x: -24, y: -6.5}
-        - {x: -24, y: -25.5}
-        - {x: -23, y: -26.5}
-        - {x: -17, y: -29.5}
-        - {x: 8, y: -29.5}
-        - {x: 12, y: -28.5}
-        - {x: 24, y: -18.5}
-        - {x: 24, y: 17.5}
-        - {x: 11, y: 29.5}
-      - - {x: 17, y: 27.5}
-        - {x: 17, y: 29.5}
+      - - {x: -23, y: 14.5}
+        - {x: -23, y: -20.5}
+        - {x: -16, y: -26.5}
+        - {x: 12, y: -26.5}
+        - {x: 22, y: -23.5}
+        - {x: 22, y: 2.5}
+        - {x: 18, y: 18.5}
+        - {x: 5, y: 29.5}
+        - {x: -11, y: 29.5}
+        - {x: -21, y: 25.5}
+      - - {x: 12, y: 27.5}
         - {x: 12, y: 29.5}
-        - {x: 14, y: 26.5}
+        - {x: 7, y: 29.5}
+        - {x: 9, y: 26.5}
     - name: Campfire2Colored_4
       rect:
         serializedVersion: 2
-        x: 254
+        x: 252
         y: 0
-        width: 47
+        width: 60
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -23.5, y: 25.5}
-        - {x: -23.5, y: -29.5}
-        - {x: 23.5, y: -29.5}
-        - {x: 23.5, y: 20.5}
-        - {x: 8.5, y: 25.5}
+      - - {x: 19, y: 20.5}
+        - {x: 5, y: 25.5}
+        - {x: -18, y: 25.5}
+        - {x: -22, y: 0.5}
+        - {x: -22, y: -16.5}
+        - {x: -17, y: -21.5}
+        - {x: 0, y: -28.5}
+        - {x: 11, y: -28.5}
+        - {x: 14, y: -27.5}
+        - {x: 23, y: -20.5}
+        - {x: 23, y: 9.5}
     - name: Campfire2Colored_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 332
         y: 0
-        width: 42
+        width: 30
         height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -5, y: 29.5}
-        - {x: -21, y: -2.5}
-        - {x: -21, y: -29.5}
-        - {x: 14, y: -29.5}
-        - {x: 21, y: -20.5}
-        - {x: 21, y: 29.5}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -42,13 +42,16 @@ public class LightComponent : MonoBehaviour {
     void Update () {
        // Debug.Log(dark.color.a);
         transparence = 0;
+       // int i = 0;
         foreach (var item in lightList)
         {
             transparence += item.Value;
+        //    i++;
         }
+        //Debug.Log(i);
         newColor.a = 0f;// transparence / 100;
         transparence = 1 - Math.Min(transparence, 100);
-        // Debug.Log(transparence);
+        //Debug.Log(transparence);
         this.GetComponent<Opacity>().SetLightTransparence(transparence); //dark.color = new Color(darkColor.r, darkColor.g, darkColor.b, transparence);
         //  darkColor = newColor;
     }

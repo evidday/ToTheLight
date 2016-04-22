@@ -44,7 +44,7 @@ public class PlayerLayerScript : MonoBehaviour {
             }
             else
             {
-                playerRender.sortingLayerName = "Second";
+                playerRender.sortingLayerName = "First";
             }
         }
         coverObject.GetComponent<ActiveTrigger>().SetLayer(layer);

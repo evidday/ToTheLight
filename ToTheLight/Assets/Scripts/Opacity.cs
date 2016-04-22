@@ -37,7 +37,7 @@ public class Opacity : MonoBehaviour {
         if (this.gameObject.layer == 15) // BackLayer
         {
             backModifier = 2.2f;
-            backPlus = 0.5f;
+            backPlus = 0.35f;
             if (transparence)
             {
                 backLightModifier = 5f;
@@ -51,12 +51,18 @@ public class Opacity : MonoBehaviour {
         {
             opacity = 1f;
         }
-        dark.color = new Color(dark.color.r, dark.color.g, dark.color.b, (float)(lightTransparence * opacity * backModifier * backLightModifier) + backPlus);
-        colored.color = new Color(colored.color.r, colored.color.g, colored.color.b, opacity - (opacity)*(lightTransparence)*backModifier);
+        float help = 1;
+        if (lightTransparence == 1)
+        {
+            help = 0;
+        }
+       // Debug.Log(help * (float)opacity * (1 - Mathf.Max(Mathf.Min(lightTransparence * backModifier * Mathf.Abs(Mathf.Atan(lightTransparence) / 2), 1), 0)));
+        dark.color = new Color(dark.color.r, dark.color.g, dark.color.b, (float)opacity * Mathf.Max(0, Mathf.Min(1, lightTransparence  * backModifier * backLightModifier * Mathf.Abs(Mathf.Atan(lightTransparence + Mathf.PI / 2)))) + backPlus);
+        colored.color = new Color(colored.color.r, colored.color.g, colored.color.b, help * (float)opacity * (1 - Mathf.Max(Mathf.Min(lightTransparence*backModifier*Mathf.Abs(Mathf.Atan(lightTransparence) / 2), 1), 0)));
         if (lightSourceColored != null)
         {
             lightSourceColored.intensity = 4 * (opacity - (opacity) * (lightTransparence) * backModifier);
-           // lightSourceDark.color = new Color(lightSourceDark.color.r, lightSourceDark.color.g, lightSourceDark.color.b, (float)(lightTransparence * opacity * backModifier * backLightModifier) + backPlus);
+            lightSourceDark.intensity = 2 * (lightTransparence * opacity * backModifier * backLightModifier + backPlus);
         }
     }
 }

@@ -12,6 +12,8 @@ public class ActiveTrigger : MonoBehaviour {
     private bool layer;
     private bool leftCover;
     private int counter;
+    private int otherLayer;
+    private bool lowCover;
 
 	// Use this for initialization
 	void Start () {
@@ -36,13 +38,19 @@ public class ActiveTrigger : MonoBehaviour {
        {
            counter++;
        }
-        Debug.Log(other.gameObject.transform.parent.gameObject.layer);
+      // Debug.Log(other.gameObject.transform.parent.gameObject.layer);
+       // Debug.Log(layer);
        if ((layer && (other.gameObject.transform.parent.gameObject.layer == 15)) || (!layer && (other.gameObject.transform.parent.gameObject.layer != 15))) //BackLayer
        {
+            otherLayer = other.gameObject.transform.parent.gameObject.layer;
             activeZone = true;
             coverTransform = other.transform;
             if ((other.gameObject.layer == 16) && (other.gameObject.GetComponent<Cover>().coverState != 0))//Active Object
             {
+                if (other.gameObject.GetComponent<Cover>().lowCover)
+                {
+                    lowCover = true;
+                }
                 if(other.gameObject.GetComponent<Cover>().coverState == 1)
                 {
                     leftCover = false;
@@ -62,7 +70,6 @@ public class ActiveTrigger : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D other)
     {
-
     }
 
     public bool GetBlock()
@@ -83,17 +90,21 @@ public class ActiveTrigger : MonoBehaviour {
         coverZone = false;
         activeZone = false;
         inCover = false;
+        this.gameObject.transform.parent.GetComponent<PlayerControl>().SetLowCover(false);
+        lowCover = false;
     }
 
     private void OutOfCover()
     {
         hitObject.transform.position = gameObject.transform.parent.gameObject.transform.position;
         inCover = false;
+        this.gameObject.transform.parent.GetComponent<PlayerControl>().SetLowCover(false);
+        //lowCover = false;
     }
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKey(KeyCode.E) && (timer + 0.3 <= Time.time) && activeZone)
+        if (Input.GetKey(KeyCode.E) && (timer + 0.3 <= Time.time) && activeZone && ((layer && (otherLayer == 15)) || (!layer && (otherLayer != 15))))
         {
             if (coverZone)
             {
@@ -103,6 +114,10 @@ public class ActiveTrigger : MonoBehaviour {
                     if (inCover)
                     {
                         hitObject.transform.position = new Vector3(coverTransform.position.x, this.transform.position.y, this.transform.position.z);
+                        if (lowCover)
+                        {
+                            this.gameObject.transform.parent.GetComponent<PlayerControl>().SetLowCover(true);
+                        }
                     }
                 }
                 else

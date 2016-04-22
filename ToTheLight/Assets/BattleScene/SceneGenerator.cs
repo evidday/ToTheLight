@@ -57,6 +57,7 @@ public class SceneGenerator : MonoBehaviour {
 
     public void SetLight(float light)
     {
+        //Debug.Log(light);
         b0.GetComponent<MidBlockFlip>().SetOpacity(light);
         b1.GetComponent<MidBlockFlip>().SetOpacity(light);
         b2.GetComponent<MidBlockFlip>().SetOpacity(light);

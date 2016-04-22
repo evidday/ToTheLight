@@ -18,7 +18,7 @@ public class LightCounter : MonoBehaviour {
     {
         float dist = Vector2.Distance(this.transform.position, other.transform.position);
        // Debug.Log(lightCounter / maxLight * (maxLength - dist) / maxLength);
-        other.GetComponent<LightComponent>().AddLight(this.name, lightCounter / maxLight * (maxLength - dist) / maxLength);
+        other.GetComponent<LightComponent>().AddLight(this.name, (float)lightCounter / maxLight * (maxLength - dist) / maxLength);
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -37,7 +37,7 @@ public class LightCounter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        sceneStarter.GetComponent<SceneGenerator>().SetLight(1 - lightCounter / maxLight);
-        this.GetComponent<CircleCollider2D>().radius = 20 * lightCounter / maxLight;// new Vector3(lightCounter / maxLight, lightCounter / maxLight, lightCounter / maxLight);
+        sceneStarter.GetComponent<SceneGenerator>().SetLight(1 - (float)lightCounter / (float)maxLight);
+        this.GetComponent<CircleCollider2D>().radius = 17.3f * lightCounter / maxLight;// new Vector3(lightCounter / maxLight, lightCounter / maxLight, lightCounter / maxLight);
 	}
 }

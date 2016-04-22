@@ -4,6 +4,7 @@ using System.Collections;
 public class Cover : MonoBehaviour {
 
     public int coverState;
+    public bool lowCover;
 
 	// Use this for initialization
 	void Start () {

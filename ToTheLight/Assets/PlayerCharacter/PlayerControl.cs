@@ -3,7 +3,14 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerControl : MonoBehaviour
+{
+    private bool lowCover;
+
+    public void SetLowCover(bool lc)
     {
+        lowCover = lc;
+    }
+
         private bool m_Jump;
 
 
@@ -27,7 +34,7 @@ public class PlayerControl : MonoBehaviour
     {
         // Read the inputs.
         int speed = 0;
-        bool crouch = Input.GetKey(KeyCode.S);
+        bool crouch = Input.GetKey(KeyCode.S) || lowCover;
         if (Input.GetKey(KeyCode.A))
         {
             speed = -1;
