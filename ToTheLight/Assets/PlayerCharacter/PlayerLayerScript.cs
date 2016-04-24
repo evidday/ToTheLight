@@ -41,10 +41,12 @@ public class PlayerLayerScript : MonoBehaviour {
             if (layer)
             {
                 playerRender.sortingLayerName = "Triple";
+                this.gameObject.transform.parent.gameObject.GetComponent<CharacterControl>().SetBackLayer(true);
             }
             else
             {
                 playerRender.sortingLayerName = "First";
+                this.gameObject.transform.parent.gameObject.GetComponent<CharacterControl>().SetBackLayer(false);
             }
         }
         coverObject.GetComponent<ActiveTrigger>().SetLayer(layer);

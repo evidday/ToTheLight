@@ -32,6 +32,21 @@ public class CharacterControl : MonoBehaviour
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
+        public void SetBackLayer(bool tf)
+    {
+        if (tf)
+        {
+            this.gameObject.layer = 21;
+            m_GroundCheck.gameObject.layer = 21;
+            m_CeilingCheck.gameObject.layer = 21;
+        }
+        else
+        {
+            this.gameObject.layer = 9;
+            m_GroundCheck.gameObject.layer = 9;
+            m_CeilingCheck.gameObject.layer = 9;
+        }
+    }
 
         private void FixedUpdate()
         {

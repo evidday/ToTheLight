@@ -33,14 +33,14 @@ public class ActiveTrigger : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-      //  Debug.Log(other.gameObject.tag);
+      // Debug.Log(other.gameObject.tag);
        if (other.gameObject.tag == "Block")
        {
            counter++;
        }
       // Debug.Log(other.gameObject.transform.parent.gameObject.layer);
        // Debug.Log(layer);
-       if ((layer && (other.gameObject.transform.parent.gameObject.layer == 15)) || (!layer && (other.gameObject.transform.parent.gameObject.layer != 15))) //BackLayer
+       if ((other.gameObject.layer == 16) && ((layer && (other.gameObject.transform.parent.gameObject.layer == 15)) || (!layer && (other.gameObject.transform.parent.gameObject.layer != 15)))) //BackLayer
        {
             otherLayer = other.gameObject.transform.parent.gameObject.layer;
             activeZone = true;

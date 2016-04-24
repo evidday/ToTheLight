@@ -16,7 +16,7 @@ public class MainMenuScript : MonoBehaviour {
     private void GenerateLocation()
     {
         string[] dayType = { "Day", "Night" };
-        string[] firstMapType = { "Field", "Forest", "Mountains", "Beach", "Arctic" };
+        string[] firstMapType = { "Forest", "Field", "Mountains", "Beach", "Arctic" };
         string[] secondaryMapType = { "None", "Urban", "Country", "River", "Lake", "WarField", "Trash", "WarBase", "Castle", "Town"};
         string[] tripleMapType = { "None", "Settelment", "Camp", "Wild", "Texno", "Monsters" };
         string[] firstEnemyType = { "None", "People", "Monsters", "Texno" };
