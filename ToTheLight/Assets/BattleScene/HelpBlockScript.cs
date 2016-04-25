@@ -13,6 +13,14 @@ public class HelpBlockScript : MonoBehaviour {
         }
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.layer == 21)
+        {
+            backGround.active = false;
+        }
+    }
+
     void OnTriggerExit2D(Collider2D other)
     {
         backGround.active = true;

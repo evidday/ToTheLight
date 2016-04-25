@@ -88,6 +88,10 @@
     <Compile Include="Assets\MainScene\Scripts\MainMenuScript.cs" />
     <Compile Include="Assets\PlayerCharacter\ActiveTrigger.cs" />
     <Compile Include="Assets\PlayerCharacter\CharacterControl.cs" />
+    <Compile Include="Assets\PlayerCharacter\InventorySystem\Item.cs" />
+    <Compile Include="Assets\PlayerCharacter\InventorySystem\ItemInventory.cs" />
+    <Compile Include="Assets\PlayerCharacter\InventorySystem\PlayerInventory.cs" />
+    <Compile Include="Assets\PlayerCharacter\InventorySystem\ShowChestsSystem.cs" />
     <Compile Include="Assets\PlayerCharacter\Light\LightCounter.cs" />
     <Compile Include="Assets\PlayerCharacter\MenuScript.cs" />
     <Compile Include="Assets\PlayerCharacter\PlayerControl.cs" />
@@ -233,7 +237,6 @@
     <None Include="Assets\TimeTrash\Free Horror Track\ReadMe.txt" />
     <None Include="Assets\TimeTrash\FreeParallax\Readme.txt" />
     <None Include="Assets\TimeTrash\German Soldier Voiceover Files\AReadme!.txt" />
-    <None Include="Assets\TimeTrash\Inventory\Credits + C#.txt" />
     <None Include="Assets\TimeTrash\L41225_GermanSoldier\WAV\Readme.txt" />
     <None Include="Assets\TimeTrash\MentalDreamsAssets\SoldierSoundsPack\ReadMe!.txt" />
     <None Include="Assets\TimeTrash\RainMaker\Prefab\RainShader.shader" />
