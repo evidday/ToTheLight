@@ -22,6 +22,10 @@ public class ShowChestsSystem : MonoBehaviour {
 
     public void DeleteChest(GameObject go)
     {
+        if (chosen == go)
+        {
+            NextChest();
+        }
         chestList.Remove(go);
         if (chestList.Count == 0)
         {

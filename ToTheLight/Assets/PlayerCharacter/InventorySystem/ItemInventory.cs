@@ -7,6 +7,7 @@ public class ItemInventory : MonoBehaviour {
     public int n;
     public int m;
     private GameObject go;
+    public bool throwObject;
 
     private bool showInventory = false;
     private int pixSize = 28;
@@ -51,18 +52,32 @@ public class ItemInventory : MonoBehaviour {
         }
     }
 
-    // Use this for initialization
-    void Start () {
-        n = 2;
-        m = 4;
+    public void Ini()
+    {
         inv = new Item[n, m];
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < m; j++)
             {
                 inv[i, j] = new Item();
-                inv[i, j].Generate();
+                if (!throwObject)
+                {
+                    inv[i, j].Generate();
+                }
+                else
+                {
+                    inv[i, j].Generate();
+                    inv[i, j].Clear();
+                }
             }
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
+        if (!throwObject)
+        {
+            Ini();
         }
     }
 	
@@ -70,6 +85,32 @@ public class ItemInventory : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void SetIniItem(Item it, int x, int y, GameObject g)
+    {
+        go = g;
+        bool f = false;
+        inv = new Item[n, m];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                inv[i, j] = new Item();
+                inv[i, j].Clear();
+                if (inv[i, j].id == 0)
+                {
+                    inv[i, j] = it.Copy();
+                    go.GetComponent<PlayerInventory>().ClearItem(x, y);
+                    f = true;
+                    break;
+                }
+            }
+            if (f)
+            {
+                break;
+            }
+        }
+    }
 
     public void SetItem(Item it, int x, int y)
     {
@@ -96,6 +137,12 @@ public class ItemInventory : MonoBehaviour {
     public void ClearItem(int i, int j)
     {
         inv[i, j].Clear();
+        if (throwObject)
+        {
+            go.GetComponent<ShowChestsSystem>().DeleteChest(this.gameObject);
+            showInventory = false;
+            Destroy(this.gameObject.transform.parent.gameObject);
+        }
     }
 
     void OnGUI()
