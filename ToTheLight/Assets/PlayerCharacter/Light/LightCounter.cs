@@ -1,13 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class LightCounter : MonoBehaviour {
 
 	// Use this for initialization
     private int lightCounter;
+    private int showLight;
+    private bool showLightFlag = false;
     private float maxLength = (float)20;
     private int maxLight = 1000;
     private GameObject sceneStarter;
+    private float timer = Time.time;;
+
+    public void PlusLight(int light)
+    {
+        lightCounter += light;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -37,7 +46,20 @@ public class LightCounter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        sceneStarter.GetComponent<SceneGenerator>().SetLight(1 - (float)lightCounter / (float)maxLight);
-        this.GetComponent<CircleCollider2D>().radius = 17.3f * lightCounter / maxLight;// new Vector3(lightCounter / maxLight, lightCounter / maxLight, lightCounter / maxLight);
+        if (Input.GetKey(KeyCode.Q) && (timer + 0.3 <= Time.time))
+        {
+            showLightFlag = !showLightFlag;
+            timer = Time.time;
+        }
+        if (showLightFlag)
+        {
+            showLight = lightCounter;
+        }
+        else
+        {
+            showLight = 0;
+        }
+        sceneStarter.GetComponent<SceneGenerator>().SetLight(1 - (float)showLight/ (float)maxLight);
+        this.GetComponent<CircleCollider2D>().radius = 17.3f * showLight / maxLight;// new Vector3(lightCounter / maxLight, lightCounter / maxLight, lightCounter / maxLight);
 	}
 }

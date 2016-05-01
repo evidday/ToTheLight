@@ -92,12 +92,14 @@
     <Compile Include="Assets\PlayerCharacter\InventorySystem\ItemInventory.cs" />
     <Compile Include="Assets\PlayerCharacter\InventorySystem\PlayerInventory.cs" />
     <Compile Include="Assets\PlayerCharacter\InventorySystem\ShowChestsSystem.cs" />
+    <Compile Include="Assets\PlayerCharacter\Light\ItemLightCounter.cs" />
     <Compile Include="Assets\PlayerCharacter\Light\LightCounter.cs" />
     <Compile Include="Assets\PlayerCharacter\MenuScript.cs" />
     <Compile Include="Assets\PlayerCharacter\PlayerControl.cs" />
     <Compile Include="Assets\PlayerCharacter\PlayerLayerScript.cs" />
     <Compile Include="Assets\PlayerCharacter\СameraSizeScript.cs" />
     <Compile Include="Assets\Scripts\Cover.cs" />
+    <Compile Include="Assets\Scripts\FlameLight.cs" />
     <Compile Include="Assets\Scripts\LightComponent.cs" />
     <Compile Include="Assets\Scripts\Opacity.cs" />
     <Compile Include="Assets\TimeTrash\2DLightAsset\Examples\RigidBodyInterpolationSolution\FollowLight2d.cs" />

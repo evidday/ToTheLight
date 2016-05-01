@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ItemInventory : MonoBehaviour {
 
@@ -8,6 +9,8 @@ public class ItemInventory : MonoBehaviour {
     public int m;
     private GameObject go;
     public bool throwObject;
+
+    private int lightPoints;
 
     private bool showInventory = false;
     private int pixSize = 28;
@@ -77,6 +80,7 @@ public class ItemInventory : MonoBehaviour {
     void Start () {
         if (!throwObject)
         {
+            lightPoints = Random.RandomRange(0, 20);
             Ini();
         }
     }
@@ -149,6 +153,14 @@ public class ItemInventory : MonoBehaviour {
     {
         if (showInventory)
         {
+            if (lightPoints != 0)
+            {
+                if (GUI.Button(new Rect(Screen.width / 4 * 3 - pixSize * (3), Screen.height / 2 - pixSize * (3 -0), pixSize, pixSize), "" + lightPoints))
+                {
+                    go.GetComponent<PlayerInventory>().PlusLight(lightPoints);
+                    lightPoints = 0;
+                }
+            }
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < m; j++)

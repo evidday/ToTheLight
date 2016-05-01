@@ -15,8 +15,14 @@ public class PlayerInventory : MonoBehaviour {
 
     public GameObject throwItemBack;
     public GameObject throwItemMid;
+    public GameObject lightObject;
 
     public GameObject throwPos;
+
+    public void PlusLight(int light)
+    {
+        lightObject.GetComponent<LightCounter>().PlusLight(light);
+    }
 
     public void SetItem(Item it, int x, int y)
     {

@@ -7,7 +7,7 @@ public class Item
     
     public void Generate()
     {
-        this.id = Random.Range(1, 5);
+        this.id = Random.Range(0, 5);
     }
 
     public void Clear()

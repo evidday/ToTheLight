@@ -14,6 +14,7 @@ public class ActiveTrigger : MonoBehaviour {
     private int counter;
     private int otherLayer;
     private bool lowCover;
+    private bool getLight;
 
 	// Use this for initialization
 	void Start () {
@@ -47,6 +48,7 @@ public class ActiveTrigger : MonoBehaviour {
             coverTransform = other.transform;
             if ((other.gameObject.layer == 16) && (other.gameObject.GetComponent<Cover>().coverState != 0))//Active Object
             {
+                getLight = false;
                 if (other.gameObject.GetComponent<Cover>().lowCover)
                 {
                     lowCover = true;
@@ -55,11 +57,15 @@ public class ActiveTrigger : MonoBehaviour {
                 {
                     leftCover = false;
                 }
-                else
+                if (other.gameObject.GetComponent<Cover>().coverState == -1)
                 {
                     leftCover = true;
                 }
-                coverZone = true;
+                if (other.gameObject.GetComponent<Cover>().coverState == 2)
+                {
+                    getLight = true;
+                }
+                    coverZone = true;
             }
             else
             {

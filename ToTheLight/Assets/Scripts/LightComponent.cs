@@ -40,7 +40,7 @@ public class LightComponent : MonoBehaviour {
 	// Update is called once per frame
 
     void Update () {
-       // Debug.Log(dark.color.a);
+        // Debug.Log(dark.color.a);
         transparence = 0;
        // int i = 0;
         foreach (var item in lightList)
