@@ -11,7 +11,7 @@ public class LightCounter : MonoBehaviour {
     private float maxLength = (float)20;
     private int maxLight = 1000;
     private GameObject sceneStarter;
-    private float timer = Time.time;;
+    private float timer = Time.time;
 
     public void PlusLight(int light)
     {

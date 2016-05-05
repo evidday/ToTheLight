@@ -2,6 +2,9 @@
 using UnityEngine;
 public class CharacterControl : MonoBehaviour
     {
+
+        public GameObject hitObject;
+        
         [SerializeField]
         private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField]
@@ -124,8 +127,15 @@ public class CharacterControl : MonoBehaviour
             m_FacingRight = !m_FacingRight;
 
             // Multiply the player's x local scale by -1.
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
+            Quaternion theScale = hitObject.transform.localRotation;
+            if (m_FacingRight)
+            {
+                theScale.y = 0;
+            }
+            else
+            {
+                theScale.y = 180;
+            }
+            hitObject.transform.localRotation = theScale;
         }
     }

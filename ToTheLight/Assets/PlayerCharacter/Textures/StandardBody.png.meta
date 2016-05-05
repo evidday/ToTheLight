@@ -1,0 +1,343 @@
+fileFormatVersion: 2
+guid: 0d4442f994236ff40b96ed39cc6b6c0d
+timeCreated: 1462220773
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: UpperArm
+    21300002: MidLeg
+    21300004: Foot
+    21300006: Tors
+    21300008: DownLeg
+    21300010: DownArm
+    21300012: Neck
+    21300014: Hand
+    21300016: Shoulder
+    21300018: UpperLeg
+    21300020: Head
+    21300022: MidArm
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: UpperArm
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 819
+        width: 96
+        height: 193
+      alignment: 9
+      pivot: {x: 0.47204795, y: 0.9240669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.683395, y: 13.65509}
+        - {x: -35.316605, y: 13.65509}
+        - {x: -45.316605, y: 5.6550903}
+        - {x: -45.316605, y: -178.34491}
+        - {x: 39.683395, y: -178.34491}
+        - {x: 50.683395, y: -85.34491}
+        - {x: 50.683395, y: 6.6550903}
+    - name: MidLeg
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 915
+        width: 95
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.5, y: 34}
+        - {x: -47.5, y: 19}
+        - {x: -47.5, y: -34}
+        - {x: 46.5, y: -34}
+        - {x: 47.5, y: -26}
+        - {x: 47.5, y: 34}
+    - name: Foot
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 815
+        width: 175
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84.5, y: -19}
+        - {x: 66.5, y: -15}
+        - {x: 16.5, y: 5}
+        - {x: -6.5, y: 28}
+        - {x: -28.5, y: 28}
+        - {x: -85.5, y: -18}
+        - {x: -85.5, y: -33}
+        - {x: -82.5, y: -36}
+        - {x: 87.5, y: -36}
+        - {x: 87.5, y: -21}
+      - - {x: -61.5, y: 12}
+        - {x: -62.5, y: 8}
+        - {x: -60.5, y: 6}
+        - {x: -57.5, y: 6}
+        - {x: -53.5, y: 11}
+        - {x: -50.5, y: 18}
+        - {x: -53.5, y: 20}
+      - - {x: -48.5, y: 22}
+        - {x: -45.5, y: 23}
+        - {x: -45.5, y: 26}
+        - {x: -48.5, y: 27}
+        - {x: -50.5, y: 25}
+      - - {x: -69.5, y: 34}
+        - {x: -69.5, y: 36}
+        - {x: -74.5, y: 36}
+        - {x: -72.5, y: 33}
+    - name: Tors
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 308
+        width: 178
+        height: 490
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81, y: 110}
+        - {x: 83, y: 148}
+        - {x: 77, y: 207}
+        - {x: 89, y: 262}
+        - {x: 89, y: 368}
+        - {x: 87, y: 385}
+        - {x: 79, y: 405}
+        - {x: 73, y: 425}
+        - {x: 60, y: 441}
+        - {x: 46, y: 460}
+        - {x: 19, y: 488}
+        - {x: 7, y: 490}
+        - {x: -76, y: 490}
+        - {x: -78, y: 489}
+        - {x: -80, y: 484}
+        - {x: -89, y: 463}
+        - {x: -89, y: 315}
+        - {x: -83, y: 282}
+        - {x: -76, y: 222}
+        - {x: -88, y: 118}
+        - {x: -89, y: 102}
+        - {x: -89, y: 29}
+        - {x: -85, y: 17}
+        - {x: -77, y: 5}
+        - {x: -71, y: 0}
+        - {x: 53, y: 0}
+        - {x: 57, y: 8}
+        - {x: 70, y: 32}
+        - {x: 78, y: 81}
+      - - {x: 86, y: 2}
+        - {x: 88, y: 0}
+        - {x: 89, y: 0}
+        - {x: 89, y: 5}
+        - {x: 87, y: 5}
+    - name: DownLeg
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 435
+        width: 109
+        height: 364
+      alignment: 9
+      pivot: {x: 0.5615472, y: 0.923227}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline:
+      - - {x: 47.79135, y: -29.054626}
+        - {x: 47.79135, y: 27.945374}
+        - {x: -39.20865, y: 27.945374}
+        - {x: -61.20865, y: -11.054626}
+        - {x: -61.20865, y: -171.05463}
+        - {x: -57.20865, y: -231.05463}
+        - {x: -61.20865, y: -252.05463}
+        - {x: -61.20865, y: -336.05463}
+        - {x: -15.208649, y: -336.05463}
+        - {x: 35.79135, y: -272.05463}
+        - {x: 16.791351, y: -261.05463}
+        - {x: 44.79135, y: -80.05463}
+    - name: DownArm
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 388
+        width: 119
+        height: 155
+      alignment: 9
+      pivot: {x: 0.2970512, y: 0.91550016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51.65091, y: 13.097473}
+        - {x: -35.34909, y: 13.097473}
+        - {x: -35.34909, y: -30.902527}
+        - {x: 28.65091, y: -141.90253}
+        - {x: 72.65091, y: -141.90253}
+        - {x: 77.65091, y: -140.90253}
+        - {x: 83.65091, y: -134.90253}
+        - {x: 83.65091, y: -95.90253}
+        - {x: 53.65091, y: 12.097473}
+    - name: Neck
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 310
+        width: 92
+        height: 52
+      alignment: 9
+      pivot: {x: 0.45624858, y: 0.16457073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.97487, y: 43.44232}
+        - {x: -41.97487, y: 7.442322}
+        - {x: -41.97487, y: -8.557678}
+        - {x: 46.02513, y: -8.557678}
+        - {x: 50.02513, y: 32.44232}
+        - {x: 50.02513, y: 43.44232}
+    - name: Hand
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 248
+        width: 69
+        height: 84
+      alignment: 9
+      pivot: {x: 0.38332865, y: 0.8354303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.449677, y: 13.823853}
+        - {x: -26.449677, y: -29.176147}
+        - {x: -6.4496765, y: -70.17615}
+        - {x: 42.550323, y: -70.17615}
+        - {x: 42.550323, y: -21.176147}
+        - {x: 26.550323, y: 13.823853}
+    - name: Shoulder
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 169
+        width: 95
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 57.5}
+        - {x: -47.5, y: 56.5}
+        - {x: -47.5, y: -48.5}
+        - {x: -20.5, y: -53.5}
+        - {x: 16.5, y: -55.5}
+        - {x: 47.5, y: -55.5}
+        - {x: 47.5, y: 57.5}
+    - name: UpperLeg
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 24
+        width: 144
+        height: 268
+      alignment: 9
+      pivot: {x: 0.50931764, y: 0.850449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54.658264, y: 26.079666}
+        - {x: 31.658264, y: 40.079666}
+        - {x: -34.341736, y: 40.079666}
+        - {x: -45.341736, y: 34.079666}
+        - {x: -73.341736, y: -5.920334}
+        - {x: -73.341736, y: -138.92033}
+        - {x: -70.341736, y: -175.92033}
+        - {x: -59.341736, y: -227.92033}
+        - {x: 38.658264, y: -227.92033}
+        - {x: 69.658264, y: -103.920334}
+        - {x: 69.658264, y: 7.079666}
+    - name: Head
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 36
+        width: 158
+        height: 176
+      alignment: 9
+      pivot: {x: 0.4660326, y: 0.057842884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 57.36685, y: 161.81966}
+        - {x: 32.36685, y: 165.81966}
+        - {x: -50.63315, y: 165.81966}
+        - {x: -73.63315, y: 151.81966}
+        - {x: -73.63315, y: 56.819656}
+        - {x: -47.63315, y: -10.180344}
+        - {x: 70.36685, y: -10.180344}
+        - {x: 84.36685, y: 25.819656}
+        - {x: 84.36685, y: 83.81966}
+        - {x: 81.36685, y: 117.81966}
+    - name: MidArm
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 73
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 33.5}
+        - {x: -38, y: 32.5}
+        - {x: -38, y: -6.5}
+        - {x: -31, y: -27.5}
+        - {x: -24, y: -33.5}
+        - {x: 19, y: -33.5}
+        - {x: 38, y: -25.5}
+        - {x: 38, y: 33.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
